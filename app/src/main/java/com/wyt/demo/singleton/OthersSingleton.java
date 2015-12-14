@@ -49,6 +49,7 @@ public class OthersSingleton {
 
 
     //Instance container;
+    //like: getSystemService() to get the Instance form HashMap(SYSTEM_SERVICE_MAP) inside the ContextImpl ;
     private static Map<String, OthersSingleton> objMap = new HashMap<String, OthersSingleton>();
 
     public static void registerInstance(String key, OthersSingleton instance) {
