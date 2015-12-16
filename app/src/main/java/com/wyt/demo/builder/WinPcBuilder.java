@@ -9,24 +9,26 @@ public class WinPcBuilder extends Builder {
     private Computer mComputer = new WinComputer();
 
     @Override
-    public void buildCpu(int cpu) {
+    public WinPcBuilder buildCpu(int cpu) {
         mComputer.setCpu(cpu);
+        return this;
     }
 
     @Override
-    public void buildArm(int arm) {
-        mComputer.setArm(arm);
+    public WinPcBuilder buildRam(int ram) {
+        mComputer.setRam(ram);
+        return this;
     }
 
     @Override
-    public void buildOs(String os) {
+    public WinPcBuilder buildOs(String os) {
         mComputer.setOs(os);
+        return this;
     }
 
     @Override
     public Computer create() {
         return mComputer;
     }
-
 
 }

@@ -6,11 +6,11 @@ package com.wyt.demo.builder;
  */
 public abstract class Builder {
 
-    public abstract void buildCpu(int cpu);
+    public abstract Builder buildCpu(int cpu);
 
-    public abstract void buildArm(int arm);
+    public abstract Builder buildRam(int ram);
 
-    public abstract void buildOs(String os);
+    public abstract Builder buildOs(String os);
 
     public abstract Computer create();
 }

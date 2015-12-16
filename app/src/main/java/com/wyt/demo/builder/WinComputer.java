@@ -6,17 +6,17 @@ package com.wyt.demo.builder;
  */
 public class WinComputer extends Computer {
     @Override
-    public void setCpu(int cpu) {
+    void setCpu(int cpu) {
         mCpu = cpu;
     }
 
     @Override
-    public void setArm(int arm) {
-        mArm = arm;
+    void setRam(int ram) {
+        mRam = ram;
     }
 
     @Override
-    public void setOs(String os) {
+    void setOs(String os) {
         mOs = os;
     }
 }

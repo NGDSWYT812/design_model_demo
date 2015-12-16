@@ -6,12 +6,18 @@ package com.wyt.demo.builder;
  */
 public abstract class Computer {
     int mCpu;
-    int mArm;
+    int mRam;
     String mOs;
 
-    public abstract void setCpu(int cpu);
+    abstract void setCpu(int cpu);
 
-    public abstract void setArm(int arm);
+    abstract void setRam(int ram);
 
-    public abstract void setOs(String os);
+    abstract void setOs(String os);
+
+    @Override
+    public String toString() {
+        return "Computer [CpuCore=" + mCpu + ", RamSize=" + mRam
+                + ", Os=" + mOs + "]";
+    }
 }
