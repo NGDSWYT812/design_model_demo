@@ -8,6 +8,8 @@ import com.wyt.demo.builder.Builder;
 import com.wyt.demo.builder.Computer;
 import com.wyt.demo.builder.WinPcBuilder;
 import com.wyt.demo.facade.Controller;
+import com.wyt.demo.proxy.ISomethingDirty;
+import com.wyt.demo.proxy.WhoreMaster;
 import com.wyt.demo.template.LongTimeSex;
 import com.wyt.demo.template.ShortTimeSex;
 
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         BuilderDemo();
         FacadeDemo();
         TemplateDemo();
+        ProxyDemo();
     }
 
     private void TemplateDemo() {
@@ -46,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
                 .buildCpu(4)
                 .create();
         Log.e("wyt", computer.toString());
+        Log.e("wyt", "-----------------------");
+    }
+
+    private void ProxyDemo() {
+        ISomethingDirty whore = new WhoreMaster();
+        whore.whoredom();
         Log.e("wyt", "-----------------------");
     }
 }
