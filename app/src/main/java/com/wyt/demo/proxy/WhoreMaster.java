@@ -11,14 +11,12 @@ public class WhoreMaster implements ISomethingDirty {
 
     public WhoreMaster() {
         Log.e("wyt", "WhoreMaster：我是拉皮条的");
+        Log.e("wyt", "WhoreMaster：你自己找不到的，我帮你找一个");
         whore = new Whore();
     }
 
     @Override
     public void whoredom() {
-        if (whore != null) {
-            Log.e("wyt", "WhoreMaster：帮你找到一个");
-            whore.whoredom();
-        }
+        whore.whoredom();
     }
 }
