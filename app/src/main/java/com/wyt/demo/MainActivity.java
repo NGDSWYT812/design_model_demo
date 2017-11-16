@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.wyt.demo.adapter.Phone;
 import com.wyt.demo.builder.Builder;
 import com.wyt.demo.builder.Computer;
 import com.wyt.demo.builder.WinPcBuilder;
@@ -23,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         FacadeDemo();
         TemplateDemo();
         ProxyDemo();
+    }
+
+    private void AdapterDemo() {
+        Phone phone = new Phone();
+        phone.listenMusic();
+        Log.e("wyt", "-----------------------");
     }
 
     private void TemplateDemo() {
