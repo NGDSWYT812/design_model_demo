@@ -2,8 +2,8 @@ package com.wyt.demo.proxy;
 
 /**
  * Created by wangyt on 2015/12/16.
- * : description
+ * : 妓女接口
  */
-public interface ISomethingDirty {
+public interface IDoSomethingDirty {
     void whoredom();
 }

@@ -9,7 +9,7 @@ import com.wyt.demo.builder.Builder;
 import com.wyt.demo.builder.Computer;
 import com.wyt.demo.builder.WinPcBuilder;
 import com.wyt.demo.facade.Controller;
-import com.wyt.demo.proxy.ISomethingDirty;
+import com.wyt.demo.proxy.IDoSomethingDirty;
 import com.wyt.demo.proxy.WhoreMaster;
 import com.wyt.demo.template.LongTimeSex;
 import com.wyt.demo.template.ShortTimeSex;
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         FacadeDemo();
         TemplateDemo();
         ProxyDemo();
+        AdapterDemo();
     }
 
     private void AdapterDemo() {
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ProxyDemo() {
-        ISomethingDirty whore = new WhoreMaster();
+        IDoSomethingDirty whore = new WhoreMaster();
         whore.whoredom();
         Log.e("wyt", "-----------------------");
     }

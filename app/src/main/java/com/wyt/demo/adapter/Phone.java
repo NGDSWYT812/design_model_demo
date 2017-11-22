@@ -2,14 +2,14 @@ package com.wyt.demo.adapter;
 
 /**
  * Created by wangyt on 2017/11/16.
- * : description
+ * : 适配者
  */
 
-public class Phone implements EarPhone {
-    private EarPhoneWithLighting earPhoneWithLighting;
+public class Phone implements playable {
+    private Iphone8 earPhoneWithLighting;
 
     public Phone() {
-        this.earPhoneWithLighting = new EarPhoneWithLighting();
+        this.earPhoneWithLighting = new Iphone8();
     }
 
     @Override

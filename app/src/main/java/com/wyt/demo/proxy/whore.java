@@ -4,9 +4,9 @@ import android.util.Log;
 
 /**
  * Created by wangyt on 2015/12/16.
- * : description
+ * : 小姐姐
  */
-class Whore implements ISomethingDirty {
+class Whore implements IDoSomethingDirty {
 
     @Override
     public void whoredom() {

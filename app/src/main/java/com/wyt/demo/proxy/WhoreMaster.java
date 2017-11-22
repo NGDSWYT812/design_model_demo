@@ -4,9 +4,9 @@ import android.util.Log;
 
 /**
  * Created by wangyt on 2015/12/16.
- * : description
+ * : 妈妈桑
  */
-public class WhoreMaster implements ISomethingDirty {
+public class WhoreMaster implements IDoSomethingDirty {
     Whore whore;
 
     public WhoreMaster() {
